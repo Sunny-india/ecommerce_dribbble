@@ -1,11 +1,13 @@
 import 'package:ecommerce_dribbble/color_constants.dart';
+import 'package:ecommerce_dribbble/product_detail_model_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainPage(),
+      home: ProductDetailModelPage(),
+      //MainPage(),
     ),
   );
 }
