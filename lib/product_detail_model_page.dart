@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'color_constants.dart';
@@ -103,8 +104,50 @@ class _ProductDetailModelPageState extends State<ProductDetailModelPage> {
     return Container(
       height: size.height * .5,
       width: size.width,
-      color: Colors.red,
-      child: Column(),
+      //color: Colors.red,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 12),
+            const Text(
+              'Wireless Headphone\n\$520.00',
+              style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 30,
+                  fontStyle: FontStyle.italic,
+                  fontFamily: 'Mulish-Italic'),
+            ),
+            const SizedBox(height: 12),
+            Row(
+              children: [
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 3),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(22),
+                      color: ColorConstants.orangeContainer),
+                  child: const Row(
+                    children: [
+                      Icon(
+                        CupertinoIcons.star,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                      SizedBox(width: 4),
+                      Text(
+                        '4.8',
+                        style: TextStyle(color: Colors.white, fontSize: 24),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
