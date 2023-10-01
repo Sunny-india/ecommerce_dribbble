@@ -5,4 +5,5 @@ class ColorConstants {
   static Color roundContainerColor = const Color(0xffe3e3e3);
   static Color textFormFieldIconColor = const Color(0xff999999);
   static Color orangeContainer = const Color(0xffff660e);
+  static Color backgroundColor = const Color(0xfff5f5f5);
 }
